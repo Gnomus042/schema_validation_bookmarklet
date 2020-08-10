@@ -14,7 +14,7 @@
 3) In the opened window enter the name of new bookmarklet and past the following code to the URL field:
 
 ```
-!function(){let e=(t='//script[@type=\'application/ld+json\']',document.evaluate(t,document,null,XPathResult.FIRST_ORDERED_NODE_TYPE,null).singleNodeValue);var t;if(!e)throw'Structured data in json-ld format is not detected on this page';console.log('Structured data detected, processing...');let n=JSON.parse(e.innerText);'object'==typeof n?n=JSON.stringify(n):JSON.parse(e.innerText).forEach(e=>{e['@type'].includes('Recipe')&&(n=JSON.stringify(e))});let o=document.createElement('script');o.src='https://gnomus042.com/static/js/libs/bookmarklet.validation.bundle.js',o.async=!1,document.body.appendChild(o),o.addEventListener('load',function(){validation.validate(n,'Recipe').then(e=>console.log(e)).catch(e=>console.log(`validation error ${e}`))})}();
+javascript:!function(){let e=(t='//script[@type=\'application/ld+json\']',document.evaluate(t,document,null,XPathResult.FIRST_ORDERED_NODE_TYPE,null).singleNodeValue);var t;if(!e)throw'Structured data in json-ld format is not detected on this page';console.log('Structured data detected, processing...');let n=JSON.parse(e.innerText);'object'==typeof n?n=JSON.stringify(n):JSON.parse(e.innerText).forEach(e=>{e['@type'].includes('Recipe')&&(n=JSON.stringify(e))});let o=document.createElement('script');o.src='https://gnomus042.com/static/js/libs/bookmarklet.validation.bundle.js',o.async=!1,document.body.appendChild(o),o.addEventListener('load',function(){validation.validate(n,'Recipe').then(e=>console.log(e)).catch(e=>console.log(`validation error ${e}`))})}();
 ```
 
 <p align="center">
