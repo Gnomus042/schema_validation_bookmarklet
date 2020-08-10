@@ -7,8 +7,8 @@
 2) Create a new bookmark:
 
 <p align="center">
-  <img src="./assets/step2.1.jpg" height="250" align="center">
-  <img src="./assets/step2.2.jpg" height="250" align="center">
+  <img src="./assets/step2.1.jpg" height="200" align="center">
+  <img src="./assets/step2.2.jpg" height="200" align="center">
 </p>
 
 3) In the opened window enter the name of new bookmarklet and past the following code to the URL field:
