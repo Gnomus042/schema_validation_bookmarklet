@@ -15,7 +15,7 @@
 
 ![step3](/assets/step3.jpg?raw=true)
 
-4) Validate structured data in web pages by clicking on the bookmarklet.
+4) Validate structured data in web pages by clicking on the bookmarklet. Output will be printed to the console.
 
 ***Note that currently the bookmarklet is configured to only validate structured data of type http://schema.org/Recipe and in json-ld format***
 ## About the project
