@@ -1,11 +1,15 @@
 # Bookmarklet for schema validation instructions [work-in-progress]
 
 1) Open the bookmark manager:
-![step1](/assets/step1.jpg?raw=true)
-
+<p align="center">
+  <img src="./assets/step1.jpg" height="300" align="center">
+</p>
 2) Create a new bookmark:
-![step2.1](/assets/step2.1.jpg?raw=true)
-![step2.2](/assets/step2.2.jpg?raw=true)
+
+<p align="center">
+  <img src="./assets/step2.1.jpg" height="250" align="center">
+  <img src="./assets/step2.2.jpg" height="250" align="center">
+</p>
 
 3) In the opened window enter the name of new bookmarklet and past the following code to the URL field:
 
@@ -13,7 +17,9 @@
 !function(){let e=(t='//script[@type=\'application/ld+json\']',document.evaluate(t,document,null,XPathResult.FIRST_ORDERED_NODE_TYPE,null).singleNodeValue);var t;if(!e)throw'Structured data in json-ld format is not detected on this page';console.log('Structured data detected, processing...');let n=JSON.parse(e.innerText);'object'==typeof n?n=JSON.stringify(n):JSON.parse(e.innerText).forEach(e=>{e['@type'].includes('Recipe')&&(n=JSON.stringify(e))});let o=document.createElement('script');o.src='https://gnomus042.com/static/js/libs/bookmarklet.validation.bundle.js',o.async=!1,document.body.appendChild(o),o.addEventListener('load',function(){validation.validate(n,'Recipe').then(e=>console.log(e)).catch(e=>console.log(`validation error ${e}`))})}();
 ```
 
-![step3](/assets/step3.jpg?raw=true)
+<p align="center">
+  <img src="./assets/step3.jpg" height="300" align="center">
+</p>
 
 4) Validate structured data in web pages by clicking on the bookmarklet. Output will be printed to the console.
 
